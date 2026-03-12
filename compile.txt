@@ -1,0 +1,6 @@
+gfortran -J. -c boundaries.f90
+gfortran -I. -c grid_init.f90
+gfortran -I. -c smoothing.f90
+gfortran -I. -c io_grid.f90
+gfortran -I. -c main.f90
+gfortran -o grid boundaries.o grid_init.o smoothing.o io_grid.o main.o
